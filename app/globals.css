@@ -1,0 +1,11 @@
+@import "tailwindcss";
+:root{--ink:#243247;--muted:#68778b;--paper:#fffefa}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+.container{width:min(1100px,calc(100% - 40px));margin:auto}.navlink{font-size:13px;color:#536176;text-decoration:none}.navlink:hover{color:#3277c8}
+.kicker{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#5783b8;font-weight:700}.heading{font-size:clamp(30px,4vw,44px);letter-spacing:-.045em;line-height:1.08;font-weight:750}
+.card{background:white;border:1px solid #edf0f3;border-radius:22px;box-shadow:0 12px 35px #2337550b}.project{transition:transform .25s,box-shadow .25s}.project:hover{transform:translateY(-5px);box-shadow:0 18px 42px #23375518}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:13px 18px;font-size:13px;font-weight:700;text-decoration:none}.primary{background:#263c59;color:white}.secondary{background:white;color:#263c59;border:1px solid #e4e9ef}.pill{border:1px solid #e4e8ee;border-radius:999px;padding:8px 12px;font-size:12px;color:#526176;background:white}
+.float{animation:float 5s ease-in-out infinite}@keyframes float{50%{transform:translateY(-9px)}}
+.client-section-title{position:relative;top:-6px;padding-bottom:24px;text-align:center}.client-marquee{overflow:hidden}.client-marquee-track{display:flex;width:max-content;animation:client-marquee 32s linear infinite}.client-marquee:hover .client-marquee-track{animation-play-state:paused}.client-marquee-group{display:flex;align-items:center;gap:clamp(2.5rem,6vw,5.5rem);padding-right:clamp(2.5rem,6vw,5.5rem)}.client-wordmark{white-space:nowrap;color:#748198;font-size:clamp(1rem,2vw,1.35rem);font-weight:750;letter-spacing:-.035em}.client-gap{font-family:Arial,Helvetica,sans-serif;font-weight:900;letter-spacing:-.08em}.client-verizon{font-weight:800}.client-danskebank{font-weight:650;letter-spacing:-.045em}.client-cmacgm{font-weight:850;letter-spacing:-.05em}@keyframes client-marquee{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.client-marquee-track{animation:none}.float{animation:none}}
+@media(max-width:700px){.nav{display:none}}
